@@ -1,0 +1,51 @@
+﻿<style>
+    input[type=text],input[type=number]   {
+        border-bottom: 1px solid green;
+        color:green;
+    }
+    textarea {
+        border-bottom: 1px solid green!important;
+        color:green;
+    }
+</style>
+<ion-view view-title="spotPlayground">
+    <ion-content ng-controller="sportPlaygroundCtrl">
+        <div class="bar bar-header bar-balanced">
+            <label style="padding:5px">Spot Playground</label>
+        </div>
+        <div class="list" style="padding-top:8%">
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Place Name</span>
+                <input type="text" placeholder="Name">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Mobile No</span>
+                <input type="number" placeholder="Mobile">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Address</span>
+                <textarea rows="4" cols="5" placeholder="Address"></textarea>
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Description</span>
+                <textarea rows="4" cols="5" placeholder="Description"></textarea>
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Requirement</span>
+                <textarea rows="4" cols="5" placeholder="Requirement"></textarea>
+            </label>
+            <button class="button button-full button-balanced" ng-click="selectImage()">
+                Upload Image
+            </button>
+            <button class="button button-full button-balanced" ng-click="getImage()">
+                Take Image
+            </button>
+            <div class="col col-25" ng-repeat="image in images">
+                <img ng-src="{{image.src}}" width="100%" />
+            </div>
+            <button class="button button-balanced-900 button-full">
+                Submit
+            </button>
+        </div>
+    </ion-content>
+</ion-view>

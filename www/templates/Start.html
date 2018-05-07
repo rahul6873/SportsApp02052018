@@ -1,0 +1,29 @@
+﻿
+<style>
+    .pane, .view {
+        background-color: transparent !important;
+    }
+
+    .StartContent {
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        top: 130px;
+    }
+
+        .StartContent h2 {
+            color: white;
+            margin-top: 20px;
+        }
+</style>
+<ion-content ng-controller="StartCtrl">
+    <div class="StartContent">
+        <img src="img/SportsLogo.png" />
+        <h2>
+            New User?  Register Here
+        </h2>
+        <button class="buttonDark" style="width:70%" ng-click="OpenRegister('Citizen')">Citizen</button>
+        <button class="buttonDark" style="width:70%"  ng-click="OpenRegister('Sports Club')">Sports Club</button>
+        <h2>Already a User? <a style="color:white;text-decoration:underline" ng-click="OpenLogin()"> Sign In  </a></h2>
+    </div>
+</ion-content>

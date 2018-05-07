@@ -1,0 +1,31 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<style>
+     .pane, .view {
+        background-color: white !important;
+    }
+
+</style>
+<ion-tabs class="tabs-striped tabs-icon-top tabs-color-balanced " style="color:#1e5843!important;background-color:#1e5843!important">
+    <ion-tab title="Events" icon-off="ion-flag" icon-on="ion-flag" href="#/tab/event">
+        <ion-nav-view name="tab-event"></ion-nav-view>
+    </ion-tab>
+    <!-- Dashboard Tab -->
+    <ion-tab title="Spot PlayGround" icon-off="ion-ios-people" icon-on="ion-ios-people" ui-sref="tab.spotPlayground">
+        <ion-nav-view name="tab-spotPlayground"></ion-nav-view>
+    </ion-tab>
+    <!-- Chats Tab -->
+    <ion-tab title="Spot Talent" icon-off="ion-ios-people" icon-on="ion-ios-people" ui-sref="tab.spotTalent">
+        <ion-nav-view name="tab-spotTalent"></ion-nav-view>
+    </ion-tab>
+    <!-- Account Tab -->
+    <ion-tab title="Result" icon-off="ion-arrow-expand" icon-on="ion-arrow-expand" href="#/tab/account">
+        <ion-nav-view name="tab-account"></ion-nav-view>
+    </ion-tab>
+    <ion-tab title="Account" icon-off="ion-person-add" icon-on="ion-person-add" href="#/tab/account">
+        <ion-nav-view name="tab-account"></ion-nav-view>
+    </ion-tab>
+</ion-tabs>

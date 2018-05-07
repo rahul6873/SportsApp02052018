@@ -1,0 +1,36 @@
+﻿<style>
+    .button {
+        padding: 1px 10px !important;
+    }
+    .event-detail-container {
+        margin-top: 78%;
+    }
+    .table-fixed {
+        table-layout:fixed;
+    }
+    .scroll-content {
+        position:relative;
+    }
+    .weekview-allday-content-wrapper {
+        position:absolute;
+    }
+</style>
+<ion-view view-title="{{viewTitle}}" ng-controller="CalendarDemoCtrl">
+    <div class="bar bar-header bar-balanced">
+        <label style="padding:5px">{{viewTitle}}</label>
+        <div class="button-bar col-40" style="font-size:12px">
+            <button class="button Icon" ng-disabled="isToday()" ng-click="today()">T</button>
+            <button class="button Icon" ng-click="changeMode('month')">M</button>
+            <button class="button Icon" ng-click="changeMode('week')">W</button>
+            <button class="button Icon" ng-click="changeMode('day')">D</button>
+            <button class="button Icon" ng-click="loadEvents()" style="min-width:65px">Load</button>
+        </div>
+    </div>
+    <ion-content scroll="false">
+        <div style="padding-top:52px">
+            <calendar calendar-mode="calendar.mode" event-source="eventSource" range-changed="reloadSource(startTime, endTime)"
+                      event-selected="onEventSelected(event)" title-changed="onViewTitleChanged(title)"
+                      time-selected="onTimeSelected(selectedTime, events, disabled)" step="30"></calendar>
+        </div>
+    </ion-content>
+</ion-view>

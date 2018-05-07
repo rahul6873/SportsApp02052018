@@ -1,25 +1,49 @@
-<ion-modal-view>
-  <ion-header-bar>
-    <h1 class="title">Login</h1>
-    <div class="buttons">
-      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+﻿
+<style>
+    .pane, .view {
+        background-color: transparent !important;
+    }
+</style>
+<ion-content ng-controller="LoginCtrl">
+    <div class="main">
+        <div class="main-w3lsrow">
+            <!-- login form -->
+            <div class="login-form login-form-left">
+                <div class="agile-row">
+                    <h2><img src="img/SportsLogo.png" /></h2>
+                    <div class="login-agileits-top">
+                        <form name="loginForm" novalidate="">
+                            <p>User Name </p>
+                            <input type="text" class="name" name="user name" ng-model="data.Username" bsy-form-validate="userNameErrorTips" required />
+
+                            <p>Password</p>
+                            <input type="password" class="password" name="Password" ng-model="data.password" bsy-form-validate="passwordErrorTips" required />
+                            <label class="anim">
+                                <input type="checkbox" class="checkbox" name="chkRemember" ng-model="data.remember">
+                                <span> Remember me ?</span>
+                            </label>
+                            <button class="buttonDark" check-form="" ng-click="checkUser()">Login</button>
+                        </form>
+                    </div>
+                    <div class="login-agileits-bottom">
+                        <h6><a ng-click="OpenForgot()"> Forgot password? </a></h6>
+                    </div>
+                    <div class="login-agileits-bottom1">
+                        <h3>(or)</h3>
+
+                    </div>
+                    <div class="social_icons agileinfo">
+                        <ul class="top-links">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </div>
-  </ion-header-bar>
-  <ion-content>
-    <form ng-submit="doLogin()">
-      <div class="list">
-        <label class="item item-input">
-          <span class="input-label">Username</span>
-          <input type="text" ng-model="loginData.username">
-        </label>
-        <label class="item item-input">
-          <span class="input-label">Password</span>
-          <input type="password" ng-model="loginData.password">
-        </label>
-        <label class="item">
-          <button class="button button-block button-positive" type="submit">Log in</button>
-        </label>
-      </div>
-    </form>
-  </ion-content>
-</ion-modal-view>
+</ion-content>

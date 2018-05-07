@@ -1,0 +1,302 @@
+/*======= Default color =======*/
+.color-default{
+	color: #7cb908
+}
+.color-white{
+	color: #fff
+}
+.color-black{
+	color: #000
+}
+.color-dark{
+	color: #0a0d1d
+}
+.color-gray{
+	color: #bdbdbd
+}
+.bg-default{
+	background: #7cb908
+}
+.bg-white{ 
+	background: #fff
+}
+.bg-black{
+	background-color: #000
+}
+.bg-dark{
+	background: #0a0d1d
+}
+.bg-gray{
+	background: #a2a2a2
+}
+.bg-gray2{
+	background: #f5f5f5
+}
+.btn-link {
+	color: #0a0d1d;
+}
+.icon-default i{
+	color: #7cb908
+}
+.icon-white i{
+	color: #fff
+}
+.icon-dark i{
+	color: #0a0d1d
+}
+h1, h2, h3, h4 {
+	color: #7cb908
+}
+.flaticon-white [class^="flaticon-"]::before{
+	color: #fff
+}
+.flaticon-black [class^="flaticon-"]::before{
+	color: #000
+}
+.stars i{
+	color: #ff9600;
+}
+.overlay:before{
+	background: rgba(124, 185, 8, .75)
+}
+.overlay-2:before{
+	background: rgba(10, 13, 29, .75)
+}
+.background-rgba-1 {
+	background: rgba(0, 0, 0, .85)
+}
+/*=======Button color =======*/
+.btn-primary{
+	background: #7cb908;
+	color: #fff
+}
+.btn-primary:hover, .btn-primary:focus{
+	background: transparent;
+	border-color: #7cb908;
+	color: #7cb908
+}
+.btn-secondary{
+	background: #fff;
+	color: #000
+}
+.btn-secondary:hover, .btn-secondary:focus{
+	background: transparent;
+	border-color: #fff;
+	color: #fff
+}
+.btn-default{
+	background: #0a0d1d;
+	color: #fff
+}
+.btn-default:hover, .btn-default:focus{
+	background: transparent;
+	border-color: #0a0d1d;
+	color: #0a0d1d
+}
+/*======= Font color =======*/
+.navbar-default .navbar-nav > li > a, 
+.dropdown-menu li a:hover, 
+.dropdown-menu li a:focus,
+.dropdown-menu li.active a:focus,
+.page_link li a, .page_link li i {
+	color: #fff;
+}
+.dropdown-menu > li.active > a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+	color: #7cb908
+}
+.btn-link, .hvr-src a:hover,
+.widget.category_item ul li a:hover,
+.trainer_social_media li a:hover, 
+.popular_product_title:hover, 
+.upcomming_event_info .title a:hover{
+	color: #7cb908;
+}
+.blog-content blockquote,
+.widget ul li a:hover,
+.latest_tweets li a:hover,
+.single_product_info p.price .woocommerce-Price-amount,
+.widget.woocommerce ul.product_list_widget li a:hover span,
+.gallery-section .filters li.mixitup-control-active,
+.gallery-section .filters li:hover,
+.shedule_table td, .product_brand li a:hover,
+.product_category li a:hover, .according_title.active,
+.post_item:hover .post_title a,
+.post_item:hover .btn-link,
+.recent_post_info a:hover, .popular_post_info a:hover{
+	color: #7cb908;
+}
+.price_value span,
+.product_show_per_page label,
+.post_item2:hover .post_title a,
+.dropdown-menu li a,
+.or, .nav-tabs > li > a, 
+.nav-tabs > li.active > a:focus, 
+#trainers2 .trainer_item:hover .trainer_name a, 
+.class_tab_menu .nav-tabs a, 
+.nav-tabs > li.active > a,
+.product_tab_menu .nav-tabs  li a,
+.product_quality li{
+	color:#0a0d1d;
+}
+.list_style_one li,
+.widget.woocommerce ul.product_list_widget li a span,
+.class_item:hover .class_item_hover .thumb-title a,
+.training_item:hover .thumb-title a,
+.training_item:hover .btn-link, 
+.pricing_item:hover .title{
+	color:#0a0d1d 
+}
+.gallery-section .filters li,
+.class_pricing tr td, .section_title p,
+.event_time li, .progress span,
+.shedule_table th, .time-count,
+.footer_social_media li a,
+.blog_tag li a, .product_name a,
+.product_brand li a,
+.day_class_details p:first-child,
+.product_category li a,
+.pricing_item:hover .btn-primary,
+#popular_programs2 .per_program_item .btn-link{
+	color:#0a0d1d;
+}
+.widget ul li a,
+.register_login a, .timing li span i, 
+.submit_btn, .carousel-caption li,
+.training_item:hover p, 
+.class_item:hover .class_item_hover tr td,
+.pricing_item:hover .duration, 
+.pricing_item:hover .price, 
+.pricing_item:hover .project_info li,
+.trainer_social_media li a,
+.post_item:hover .post_info p,
+.post_item2:hover .post_info p,
+.post_item2:hover .post_status li,
+.post_item2:hover .post_status li i,
+.post_item2:hover .post_date,
+.footer_social_media li a:hover,
+.pricing_item:hover .pricing_info li,
+#pricing2 .pricing_item:hover .duration,
+.recent_post_info a, .popular_post_info a,
+.blog_tag li a:hover, .post_item:hover .post_date,
+#popular_programs2 .about_program_item h6 a {
+	color:#fff;
+}
+.widget ul li span,
+.popular_post_info span,
+.next_coming_event p,
+.project_info li,
+.post_info li, .single_post_info li,
+.day_class_details p:last-child{
+	color: #a2a2a2;
+}
+.recent_post_info .portrait_liner,
+.popular_post_info, .event_info p,
+.event_content .text p,
+.single_event_schdule .shedule_info p,
+.single_class_text .text-area,
+.trainer_profile_text p{
+	color: #5a5a5a
+}
+
+/*======= Background color =======*/
+.dropdown-menu > li.active > a:hover {
+	background: transparent
+}
+.pagination > .active > a, 
+.pagination > .active > i, 
+.pagination > .active > a:hover, 
+.pagination > .active > i:hover, 
+.pagination > .active > a:focus, 
+.pagination > .active > i:focus,
+.dropdown-menu li a:hover, 
+.dropdown-menu li a:focus{
+	background: #7cb908
+}
+.slider_caption .thumb-title:after, 
+.carousel-indicators li, .hexagon_type1,
+.class_item:hover .class_item_hover, 
+.popular_programs::before, 
+.popular_programs::after,
+.pricing_item:hover, 
+.trainer_item_hover::after, 
+.timing li span, .class_detail .owl-dots .owl-dot span,
+.class_detail .owl-dots .owl-dot.active span {
+	background: #7cb908
+}
+.progress-bar,
+.per_program_item::after,
+.post_item2:hover .post_info, 
+.post_item2:hover .post_date,
+.shedule_table th, .training_item:hover,
+.popular_middle .line_top::before, 
+.popular_middle .line_top:first-child:after, 
+.per_program_item:first-child .about_program_item::before, 
+.about_program_item::after, 
+#popular_programs2 .per_program_item .program_item_info::before, 
+#trainers2 .trainer_item_hover:hover,
+.footer_social_media li a:hover,
+.media_dark li a:hover,
+.blog_tag li a:hover,
+.single_blog_media li i:hover,
+.pricing_item:hover .pricing_top {
+	background: #7cb908
+}
+.modal-backdrop,
+.media_dark li a,
+.pricing_item:hover .price, 
+.pricing_top, 
+.shedule_table td,
+.post_item:hover .post_info::after,
+.post_item:hover .post_info, 
+.single_blog_media li i{
+	background:#0a0d1d
+}
+.programs_overlay,
+#header_bottom.fixed-header {
+	background: #000
+}
+.post_info::after, input[type=radio]:checked,
+.single_product_quantity .quantity input{
+	background: #f5f5f5
+}
+.dropdown-menu ul, #slider::before,
+#slider::after, #slider2::before,
+.pricing_item:hover .btn-primary,
+.footer_social_media li a,
+.carousel-indicators .active,
+.blog_tag li a, .event_time_date span,
+.single_post_img::after,
+.white_line::after,
+.product_tab_menu .nav-tabs > li.active > a,
+.signup_form input, 
+.trainer_social_media li a:hover {
+	background: #fff;
+}
+
+/*======= border =======*/
+.comment_form textarea, .comment_form input,
+.product_tab_menu .tab-content,
+.product_tab_menu .nav-tabs > li.active > a,
+.cart_form_main tr td, .cart_form_main tr th,
+.cart_page select, .cart_page input,
+.quantity-button, .modal-body input,
+input[type=radio]:checked {
+	border: 1px solid #eee;
+}
+.single_product_stock{
+	border-bottom: 1px solid #eee;
+}
+.shedule_table td, .shedule_table th {
+	border: 1px solid #000
+}
+#pricing2 .pricing_item:hover .pricing_top,
+.product_category li, .product_brand li{
+	border-bottom: 1px solid #fff;
+}
+.trainer_social_media li a {
+	border: 2px solid #fff;
+}

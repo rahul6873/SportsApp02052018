@@ -1,0 +1,40 @@
+﻿<style>
+    .pane, .view {
+        background-color: transparent !important;
+    }
+</style>
+<ion-content  ng-controller="RegisterCtrl">
+    <div class="main">
+        <h2 style="font-size:16px"><img src="img/SportsLogo.png" /></h2>
+        <div class="main-w3lsrow">
+            <!-- register form -->
+            <div class="login-form login-form-left">
+                <div class="agile-row">
+                    <h2 style="font-size:16px">{{UserType}} Registration</h2>
+                    <div class="login-agileits-top">
+                        <form name="RegisterForm" novalidate="">
+                            <p>Full Name</p>
+                            <input type="text" class="name" name="fullname" ng-model="data.fullName" bsy-form-validate="fullNameErrorTips" required  />
+                            <p>User Name</p>
+                            <input type="text" class="name" name="username"  ng-model="data.Username" bsy-form-validate="userNameErrorTips" required  />
+                            <p>Mobile</p>
+                            <input type="number" class="name" name="mobile" ng-model="data.Mobile" bsy-form-validate="mobileErrorTips"  ng-pattern="/^[0-9]{10}$/"required   />
+                            <p>Password</p>
+                            <input type="password" class="password" name="Password"  ng-model="data.password" bsy-form-validate="passwordErrorTips" required   />
+                            <label class="anim">
+                                <input type="checkbox" class="checkbox">
+                                <span> Remember me ?</span>
+                                
+                            </label>
+                            <button ng-click="Register()" check-form=""  class="buttonDark" >Register</button>
+                            <br />
+                            <br />
+                            <h2 style="font-size:16px">Already a User? <a style="color:white;text-decoration:underline" ng-click="OpenLogin()"> Sign In  </a></h2>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</ion-content>
